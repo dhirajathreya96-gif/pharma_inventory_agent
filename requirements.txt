@@ -1,0 +1,19 @@
+openai
+langchain
+langchain-openai
+langgraph
+
+pandas
+numpy
+python-dateutil
+pydantic
+pyyaml
+
+requests
+apscheduler
+
+# Optional DB drivers (only if needed)
+# psycopg2
+# sqlalchemy
+# paramiko  # for SFTP
+
