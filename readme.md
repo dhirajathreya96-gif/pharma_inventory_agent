@@ -114,22 +114,6 @@ Generates clear recommended actions like:
 
 ---
 
-# 📸 **Screenshots (Add yours here)**
-
-### Dashboard
-> _Replace the placeholder with your actual screenshot_
-
-<p align="center">
-  <img src="assets/dashboard.png" width="80%"/>
-</p>
-
-### Discrepancy Table
-<p align="center">
-  <img src="assets/table.png" width="80%"/>
-</p>
-
----
-
 # 🧩 **How It Works**
 
 ### 1️⃣ Upload inventory Excel files  
