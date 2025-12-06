@@ -1,60 +1,57 @@
-# Pharma Inventory Reconciliation Agent (Agentic AI)
+# 🧪 Automated Pharma Inventory Reconciliation Agent  
+### FastAPI • Streamlit • Agentic AI • Rules Engine • Python
 
-Automated **daily inventory reconciliation** for a pharmaceutical company using **agentic AI** (LangChain + LangGraph + LLMs).
+![GitHub repo size](https://img.shields.io/github/repo-size/dhirajathreya96-gif/pharma_inventory_agent)
+![GitHub last commit](https://img.shields.io/github/last-commit/dhirajathreya96-gif/pharma_inventory_agent)
+![Python](https://img.shields.io/badge/Python-3.13-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-success)
+![Streamlit](https://img.shields.io/badge/Streamlit-Frontend-ff4b4b)
+![License](https://img.shields.io/badge/License-MIT-purple)
 
-🎥 **Project Demo Video:** 
-https://www.youtube.com/watch?v=9gYl-wywoQA
+---
 
-## Features (Planned)
+# 🎥 **Demo Video**
+Click below to watch the full walkthrough of the project:
 
-- Ingests:
-  - Raw material inventory
-  - Finished goods inventory
-  - ERP inventory snapshot
-  - Consumption logs
-  - Master data (yields, QA rules)
-- Reconciles **expected vs. actual** quantities
-- Detects:
-  - Stock mismatches
-  - Yield deviations
-  - Expired batch usage
-  - Negative inventory
-- Generates:
-  - Exception list
-  - Recommended actions for operations / QA
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=9gYl-wywoQA" target="_blank">
+    <img src="https://img.youtube.com/vi/9gYl-wywoQA/maxresdefault.jpg" width="70%" />
+  </a>
+</p>
 
-## Tech Stack
+---
 
-- Backend: FastAPI
-- AI: LangChain, LangGraph, OpenAI
-- Frontend: Streamlit
-- Data: Pandas, Excel files
+# 🚀 **Overview**
 
-## Project Structure
+The **Automated Pharma Inventory Reconciliation Agent** is a **rule-based Agentic AI system** that performs daily inventory reconciliation for pharmaceutical operations — **without needing an LLM**.
 
-(then paste the tree)
+It autonomously:
 
-## Getting Started
+- Reads multiple Excel inventory files  
+- Detects mismatches across ERP, warehouse & batch-level stock  
+- Classifies severity (High / Medium / Low)  
+- Generates recommended operational actions  
+- Displays results in a clean Streamlit dashboard  
 
-```bash
-# 1. Clone repo
-git clone <your-repo-url>
-cd pharma-inventory-agent
+This replaces hours of manual reconciliation with a fully automated workflow.
 
-# 2. Create virtual environment
-python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
+---
 
-# 3. Install dependencies
-pip install -r requirements.txt
+# 🧠 **Why This Is Agentic AI (Without LLMs)**
 
-# 4. Create .env
-cp .env.example .env
-# Fill in OPENAI_API_KEY, etc.
+Agentic AI ≠ LLM.
 
-# 5. Run backend
-uvicorn backend.main:app --reload
+An **agent** is a system that can:
 
-# 6. Run frontend
-streamlit run frontend/app.py
-# pharma_inventory_agent
+✔ Ingest data  
+✔ Reason using rules  
+✔ Decide next steps  
+✔ Trigger workflows  
+✔ Produce actions autonomously  
+
+Your system does all of this using a **deterministic rules engine**, making it ideal for accuracy-critical pharma operations.
+
+---
+
+# 🏗 **Architecture**
+
