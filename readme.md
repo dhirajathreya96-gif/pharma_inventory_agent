@@ -49,9 +49,116 @@ An **agent** is a system that can:
 ✔ Trigger workflows  
 ✔ Produce actions autonomously  
 
-Your system does all of this using a **deterministic rules engine**, making it ideal for accuracy-critical pharma operations.
+This system does all of this using a **deterministic rules engine**, making it ideal for accuracy-critical pharma operations.
 
 ---
 
 # 🏗 **Architecture**
 
+Pharma_Inventory_Agent/
+│
+├── backend/
+│ ├── main.py # FastAPI server
+│ ├── api_routes.py # Endpoints for reconciliation
+│ ├── models.py # Request/response schemas
+│
+├── agents/
+│ ├── reconciliation_agent.py # Core variance detection + logic
+│ ├── resolution_agent.py # Recommended action generator
+│ ├── exception_agent.py # Validation + error handling
+│
+├── frontend/
+│ ├── app.py # Streamlit dashboard UI
+│
+├── rules/
+│ ├── business_rules.py # Severity + action rules engine
+│
+├── data/ # Example Excel files
+├── tests/ # Test suite
+└── requirements.txt
+
+
+---
+
+# ⚙️ **Features**
+
+### 🔍 Inventory Reconciliation Engine  
+- ERP vs Warehouse  
+- Warehouse vs Batch Totals  
+- ERP vs Calculated Consumption  
+
+### 📊 Severity Classification  
+- 🔴 High  
+- 🟡 Medium  
+- 🟢 Low  
+
+### 🧭 Rules-Based Action Engine  
+Generates clear recommended actions like:  
+- Cycle count  
+- Investigate material movements  
+- Review GRN & issues  
+- Validate ERP posting delays  
+- Recompute batch usage  
+
+### 🖥 Streamlit Dashboard  
+- File upload  
+- Summary KPIs  
+- Discrepancy tables with color-coding  
+- Recommended actions table  
+- Instant feedback  
+
+### 🚀 Fully Local & Lightweight  
+- No LLM  
+- No cloud dependencies  
+- Perfect for regulated industries  
+
+---
+
+# 📸 **Screenshots (Add yours here)**
+
+### Dashboard
+> _Replace the placeholder with your actual screenshot_
+
+<p align="center">
+  <img src="assets/dashboard.png" width="80%"/>
+</p>
+
+### Discrepancy Table
+<p align="center">
+  <img src="assets/table.png" width="80%"/>
+</p>
+
+---
+
+# 🧩 **How It Works**
+
+### 1️⃣ Upload inventory Excel files  
+- Raw Material inventory  
+- Finished Goods  
+- Master Data  
+- ERP stock snapshot  
+
+### 2️⃣ Backend processes them  
+- Cleans  
+- Standardizes  
+- Validates structure  
+
+### 3️⃣ Reconciliation agent detects mismatches  
+Applies variance logic across sources.
+
+### 4️⃣ Rules engine classifies and recommends  
+- Cycle count  
+- Investigate movements  
+- Check posting delays  
+- Review consumption  
+
+### 5️⃣ Streamlit UI displays everything beautifully  
+
+---
+
+# 🖥 **Run Locally**
+
+### Backend (FastAPI)
+
+```bash
+uvicorn backend.main:app --reload
