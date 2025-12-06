@@ -2,6 +2,9 @@
 
 Automated **daily inventory reconciliation** for a pharmaceutical company using **agentic AI** (LangChain + LangGraph + LLMs).
 
+🎥 **Project Demo Video:** 
+https://www.youtube.com/watch?v=9gYl-wywoQA
+
 ## Features (Planned)
 
 - Ingests:
